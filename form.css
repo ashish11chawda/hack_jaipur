@@ -1,0 +1,47 @@
+body{
+    background-color: #2f2f2b;
+}
+form{
+    padding: 0px;
+    margin: 0px;
+    width: fit-content;
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(240, 255, 189);
+}
+td{
+    padding: 10px;
+    margin: auto;
+}
+input[type="text"], select{
+    display: inline-block;
+    width: 100%;
+}
+button{
+    width: 50%;
+    text-align: center;
+    min-height: 40px;
+    font-size: 1em;
+}
+p{
+    text-align: center;
+}
+#code{
+    max-width: 30px;
+}
+#contact{
+    width: inherit;
+}
+fieldset{
+    max-width: inherit;
+}
+legend{
+    color: aquamarine;
+}
+input[type="text"],input[type="number"],input[type="date"], option, select, button{
+    border-style: ridge;
+    border-color: black;
+    border-radius: 5%;
+    height: 2em;
+    background: linear-gradient(45deg,rgb(242, 253, 206),white,white,rgb(241, 250, 210));
+}

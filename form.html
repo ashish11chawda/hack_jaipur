@@ -8,6 +8,8 @@
 </head>
 <body>
     <form>
+        <fieldset>
+            <legend>Personal Information</legend>
         <table >
             <tr>
                 <td>
@@ -31,6 +33,26 @@
                 </td>
                 <td>
                     <input type="date" id="dob" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="contact" >Contact Number</label>
+                </td>
+                <td>
+                    <input type="text" id="code" placeholder="+91" required />
+                    <input type="text" id="contact" placeholder="1234567890" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender" >Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="male" />Male
+                    <input type="radio" name="gender" value="female" />Female<br/>
+                    <input type="radio" name="gender" value="other" />Other
+                    <input type="radio" name="gender" value="pfnts" />Prefer Not to say
                 </td>
             </tr>
             <tr>
@@ -65,7 +87,87 @@
                     <input type="text" id="distr" required placeholder="Raipur"/>
                 </td>
             </tr>
-        </table>
+            <tr>
+                <td>
+                    <label for="state">State</label>
+                </td>
+                <td>
+                    <input type="text" id="state" required placeholder="Chhattisgarh" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="country">Country</label>
+                </td>
+                <td>
+                    <input type="text" id="country" placeholder="India" required />
+                </td>
+            </tr>
+            </table>
+        </fieldset> 
+        <fieldset>
+            <legend>Education</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="qualification">Highest Qualification</label>
+                    </td>
+                    <td>
+                        <select id="qualification">
+                            <option value="uneducated">Uneducated</option>
+                            <option value="kg">Kindergarten</option>
+                            <option value="high_School">High School</option>
+                            <option value="diploma">Senior School/Diploma</option>
+                            <option value="bachelors">Bachelors</option>
+                            <option value="masters">Masters</option>
+                            <option value="other">other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="institution">Institution</label>
+                    </td>
+                    <td>
+                        <input type="text" id="institution" placeholder="Indian Institute of Technology" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="" ></label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Work</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="expertise">Field of Expertise</label>
+                    </td>
+                    <td>
+                        <input type="text" id="expertise" placeholder="Ex. driver" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="experience">Experience (in years)</label>
+                    </td>
+                    <td>
+                        <input type="number" id="experience" placeholder="type a number" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for=""></label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset> 
+        <p>
+        <button type="submit">Submit</button>
+        </p>   
     </form>
 </body>
 </html>
